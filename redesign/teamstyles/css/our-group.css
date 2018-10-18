@@ -1,0 +1,237 @@
+/* this is the layout for the style guide - you are free to change this if you want to */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.35;
+    padding: 10px;
+    color: #222;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        padding: 3em;
+    }
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+.container {
+    border-top: 3px solid #eee;
+}
+
+.container h1 {
+    padding: 0.3em 0 1em 0;
+}
+
+.container h1 strong {
+    display: block;
+    font-size: 2.3em;
+    font-weight: 100;
+}
+
+section {
+    padding-bottom: 3em;
+}
+
+section h2 {
+    border-top: 1px solid #ddd;
+    padding: 0.3em 0 1em 0;
+}
+
+section h3 {
+    padding-top: 2em;
+    color: #666;
+}
+
+section p {
+    max-width: 65ch;
+}
+
+.swatches {
+    display: flex;
+    flex-wrap: wrap;
+    color: #555;
+    padding-bottom: 3em;
+}
+
+@media screen and (min-width: 700px) {
+    .swatches {
+        flex-wrap: nowrap;
+    }
+}
+
+.swatches p.hex {
+    font-family: monospace;
+}
+
+.colour-swatch {
+    margin-right: 1em;
+}
+
+.swatch {
+    width: 100%;
+    margin: 1em 0;
+    min-height: 100px;
+    border: 1px solid #eee;
+}
+
+.type {
+    margin-bottom: 3em;
+}
+
+.type p.big-example {
+    font-size: 3em;
+    line-height: 1;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.type p.why {
+    color: #666;
+    margin-top: 1em;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    flex: 1 0 0;
+}
+
+.image+.image {
+    margin-left: 1em;
+}
+
+.images img {
+    max-width: 100%;
+    max-height: 90vh;
+    height: auto;
+    margin: 1em 0;
+}
+
+.image.middle {
+    padding-left: 20px;
+}
+
+/* COLOURS */
+
+.swatch-1 {
+    background: #C90003;
+}
+
+.swatch-2 {
+    background: #e24e42;
+}
+
+.swatch-3 {
+    background: #008f95;
+}
+
+.swatch-4 {
+    background: #490001;
+}
+
+.swatch-5 {
+    background: darkblue;
+}
+
+.swatch-6 {
+    background: #eee;
+}
+
+.swatch-7 {
+    background: black;
+}
+
+
+/* TYPOGRAPHY */
+
+.type-1 {
+    font-family: 'Spectral', Georgia, 'Times New Roman', Times, serif;
+    /* google font: make sure there are fallbacks */
+}
+
+.type-2 {
+    font-family: Helvetica, Arial, sans-serif;
+    /* you might also choose a 'web safe' font */
+}
+
+.type-3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* TEMPLATES/CODE SNIPPETS */
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid red;
+    margin-right: 10px;
+    margin-bottom: 1em;
+    border-radius: 0.2em;
+    transition: all 0.2s ease;
+}
+
+a.button.important {
+    font-size: 1.2em;
+    background: red;
+    color: white;
+    padding: 15px 30px;
+}
+
+a.button.normal {
+    color: red;
+}
+
+a.button.less {
+    color: grey;
+}
+
+a.button:hover {
+    border-color: maroon;
+    color: #222;
+}
+
+a.button.important:hover {
+    color: white;
+    background: maroon;
+}
+
+.splinks {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.splinks a:link, a:visited {
+
+    color: darkblue;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+.splinks a:hover, a:active {
+    color: red;    
+}
